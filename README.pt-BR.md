@@ -457,9 +457,10 @@ repositório é publicado para fins de portfólio e avaliação técnica.
 
 ## Autora
 
-**Brenda Tavares** - Desenvolvedora Backend, Humanidades (Universidade Federal da Bahia,
-UFBA)
+**Brenda Tavares** - Desenvolvedora Backend
 
+- Humanidades, Universidade Federal da Bahia (UFBA)
+- Desenvolvimento Back-End, Universidade Pitágoras Unopar Anhanguera
 - GitHub: <https://github.com/Brenda-Tavares>
 - LinkedIn: <https://www.linkedin.com/in/brenda-campos-tavares/>
 

@@ -426,8 +426,10 @@ Cuidar ERP 名称与 ShipClaw 品牌归各自所有者所有。本仓库为作�
 
 ## 作者
 
-**Brenda Tavares** - 后端开发，人文专业（巴伊亚联邦大学 UFBA）
+**Brenda Tavares** - 后端开发
 
+- 人文学科，巴伊亚联邦大学（UFBA）
+- 后端开发，Universidade Pitágoras Unopar Anhanguera
 - GitHub: <https://github.com/Brenda-Tavares>
 - LinkedIn: <https://www.linkedin.com/in/brenda-campos-tavares/>
 
