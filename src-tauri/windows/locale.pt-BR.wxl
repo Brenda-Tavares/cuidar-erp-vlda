@@ -1,0 +1,48 @@
+<WixLocalization Culture="pt-BR" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="TauriLanguage">1046</String>
+  <String Id="TauriCodepage">1252</String>
+  <String Id="LaunchApp">Iniciar Cuidar ERP - Vila do Aprender</String>
+  <String Id="DowngradeErrorMessage">Uma versão mais recente do Cuidar ERP - Vila do Aprender já está instalada.</String>
+  <String Id="PathEnvVarFeature">Adiciona o diretório de instalação do Cuidar ERP - Vila do Aprender à variável de ambiente PATH. Isto permite que o executável seja chamado de qualquer local.</String>
+  <String Id="InstallAppFeature">Instala o Cuidar ERP - Vila do Aprender.</String>
+
+  <!-- WiX standard UI button strings (WixUI_InstallDir) -->
+  <String Id="WixUIBack">&lt; &amp;Voltar</String>
+  <String Id="WixUINext">&amp;Avançar &gt;</String>
+  <String Id="WixUICancel">Cancelar</String>
+  <String Id="WixUIFinish">&amp;Concluir</String>
+  <String Id="WixUIOK">OK</String>
+  <String Id="WixUIYes">&amp;Sim</String>
+  <String Id="WixUINo">&amp;Não</String>
+  <String Id="WixUIRetry">&amp;Tentar novamente</String>
+  <String Id="WixUIExit">&amp;Sair</String>
+  <String Id="WixUIBrowse">&amp;Procurar...</String>
+  <String Id="WixUIInstallDir">&amp;Diretório de instalação</String>
+  <String Id="WixUISelectDir">&amp;Selecione o diretório de instalação:</String>
+  <String Id="LicenseAgreementDlgTitle">Contrato de Licença</String>
+  <String Id="LicenseAgreementDlgDescription">Por favor, leia o contrato de licença abaixo. Utilize a barra de rolagem para visualizar o texto completo.</String>
+  <String Id="LicenseAgreementDlgLicenseAccepted">Aceito os termos do contrato</String>
+  <String Id="LicenseAgreementDlgLicenseDeclined">Não aceito os termos do contrato</String>
+  <String Id="WelcomeDlgTitle">Cuidar ERP - Versão exclusiva para Vila do Aprender</String>
+  <String Id="WelcomeDlgDescription">Este assistente irá instalar o Cuidar ERP - Vila do Aprender no seu computador. Clique em "Avançar" para continuar ou "Cancelar" para sair.</String>
+  <String Id="InstallDirDlgTitle">Diretório de Destino</String>
+  <String Id="InstallDirDlgDescription">Clique em "Avançar" para instalar no diretório padrão ou clique em "Procurar" para selecionar outro.</String>
+  <String Id="ProgressDlgTitleInstalling">Instalando Cuidar ERP - Vila do Aprender</String>
+  <String Id="ProgressDlgTitleUninstalling">Removendo Cuidar ERP - Vila do Aprender</String>
+  <String Id="VerifyReadyDlgTitle">Pronto para Instalar</String>
+  <String Id="VerifyReadyDlgDescription">O instalador está pronto para começar. Clique em "Avançar" para iniciar a instalação.</String>
+  <String Id="ExitDialogTitle">Instalação Concluída</String>
+  <String Id="ExitDialogDescription">O Cuidar ERP - Vila do Aprender foi instalado com sucesso.</String>
+
+  <!-- VerifyReadyDlg strings -->
+  <String Id="VerifyReadyDlg_Title">Pronto para Instalar</String>
+  <String Id="VerifyReadyDlgInstall">Instalar</String>
+  <String Id="VerifyReadyDlgChange">Alterar</String>
+  <String Id="VerifyReadyDlgRepair">Reparar</String>
+  <String Id="VerifyReadyDlgRemove">Remover</String>
+  <String Id="VerifyReadyDlgInstallText">Clique em "Instalar" para iniciar a instalação. Para revisar ou alterar as configurações, clique em "Voltar".</String>
+  <String Id="VerifyReadyDlgChangeText">Clique em "Alterar" para modificar a instalação.</String>
+  <String Id="VerifyReadyDlgRepairText">Clique em "Reparar" para restaurar a instalação.</String>
+  <String Id="VerifyReadyDlgRemoveText">Clique em "Remover" para desinstalar o Cuidar ERP - Vila do Aprender. Para revisar as configurações, clique em "Voltar".</String>
+  <String Id="VerifyReadyDlgBannerBitmap">!(loc.InstallDirDlgBannerBitmap)</String>
+</WixLocalization>

@@ -1,0 +1,17 @@
+[package]
+name = "instalador"
+version = "1.0.8"
+edition = "2021"
+
+[dependencies]
+base64 = "0.22"
+chrono = "0.4"
+ed25519-dalek = { version = "2", features = ["std"] }
+winreg = "0.55"
+
+[build-dependencies]
+embed-resource = "1.1"
+
+[profile.release]
+lto = false
+opt-level = 3

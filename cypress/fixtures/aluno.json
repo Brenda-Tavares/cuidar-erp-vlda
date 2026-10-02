@@ -1,0 +1,9 @@
+{
+  "nome": "João Silva",
+  "cpf": "123.456.789-00",
+  "data_nascimento": "2020-01-15",
+  "turma_id": 1,
+  "status": "ativo",
+  "nome_responsavel": "Maria Silva",
+  "telefone_responsavel": "(11) 99999-8888"
+}

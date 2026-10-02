@@ -1,0 +1,78 @@
+# ============================================
+# Cuidar ERP - Vila do Aprender (versão pública / portfólio)
+# ============================================
+
+# ---------- Dependências ----------
+node_modules/
+.pnpm-store/
+
+# ---------- Next.js / build ----------
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# ---------- Tauri / Rust ----------
+**/target/
+src-tauri/gen/schemas/
+
+# ---------- Distribuição / instaladores ----------
+dist/
+installer/
+src-tauri/instalador_dll.dll
+instalador/cuidarerp-latest.msi
+instalador/*.exe
+desinstalador/*.exe
+instalador-dll/*.dll
+**.exe
+*.msi
+
+# ---------- Logs ----------
+*.log
+cargo_check.txt
+
+# ---------- Cypress (artefatos de execução) ----------
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# ---------- Bancos de dados locais ----------
+database/*.db
+database/*.db-journal
+database/*.db-wal
+database/*.db-shm
+
+# ---------- Segredos / env ----------
+.env
+.env.*
+!.env.example
+src-tauri/dev_private_key.bin
+src-tauri/licenca.chave
+src-tauri/Cargo_backup.toml
+
+# ---------- Documentos internos / exclusivos ----------
+/exclusivo erp/
+AMBIENTE-PROD.md
+/plano.md
+
+# ---------- Arquivos de teste local ----------
+/tmp-tauri-test/
+
+# ---------- Lock files alternativos ----------
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
+
+# ---------- Vercel ----------
+.vercel
+
+# ---------- Lib / docs gerado ----------
+.Api/
+.axe
+data/relatorios/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db

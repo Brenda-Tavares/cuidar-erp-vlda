@@ -1,0 +1,509 @@
+# Manual do Usuário
+## Cuidar ERP — Vila do Aprender
+### Versão 1.0.8
+
+---
+
+## Sumário
+
+1. Introdução
+2. Instalação do Sistema
+3. Tela Inicial e Login
+4. Menu Principal
+5. Cadastros
+6. Movimentações
+7. Financeiro
+8. Relatórios
+9. Configurações
+10. Desinstalação do Sistema
+
+---
+
+## 1. Introdução
+
+O **Cuidar ERP — Vila do Aprender** é um sistema de gestão empresarial completo, desenvolvido para atender às necessidades de controle administrativo, financeiro e operacional de clínicas, consultórios e estabelecimentos de saúde.
+
+### 1.1 Requisitos do Sistema
+
+| Item | Requisito Mínimo |
+|------|-----------------|
+| Sistema Operacional | Windows 10/11 (64 bits) |
+| Processador | Intel Core i3 ou equivalente |
+| Memória RAM | 4 GB |
+| Espaço em Disco | 500 MB livres |
+| Resolução de Tela | 1280 x 720 pixels ou superior |
+
+### 1.2 Recursos Principais
+
+- Gestão de pacientes e prontuários
+- Controle de agenda e agendamentos
+- Gestão financeira completa
+- Emissão de relatórios
+- Cadastro de profissionais e serviços
+- Controle de estoque
+- Configurações personalizáveis
+
+**[IMAGEM: Tela de abertura do programa]**
+
+---
+
+## 2. Instalação do Sistema
+
+### 2.1 Instalando o Programa
+
+1. Localize o arquivo `instalador.exe` na pasta de instalação
+2. Clique duas vezes para executar
+3. O sistema solicitará permissão de administrador
+4. Insira a **chave de licença** fornecida pelo suporte
+5. Aguarde a instalação ser concluída
+
+**[IMAGEM: Tela do instalador solicitando chave de licença]**
+
+### 2.2 Chave de Licença
+
+A chave de licença segue o formato:
+```
+AAAA-MM-DD:NomeDoCliente:AssinaturaBase64
+```
+
+**Exemplo:**
+```
+2031-09-03:V1l4@do#Apr3nd3r:d1hgAmsI7JJvZHGuTX62KbaYW1xV5C5H-xvMpeyUQ7dhBUcM-X-c9q0CYWCWjYPcWuxcdjNAPj_N_J8zWwdyBQ==
+```
+
+### 2.3 Após a Instalação
+
+O programa será instalado em `C:\ProgramData\Cuidar-ERP-VDA\Instalador\`
+
+Os dados do sistema ficam armazenados em:
+- **Banco de dados:** `C:\ProgramData\Cuidar-ERP-VDA\Data\`
+- **Backups e relatórios:** `C:\Users\Public\Documents\Cuidar-ERP\`
+
+**[IMAGEM: Instalação concluída com sucesso]**
+
+---
+
+## 3. Tela Inicial e Login
+
+### 3.1 Tela de Login
+
+Ao iniciar o programa, a tela de login é exibida.
+
+**[IMAGEM: Tela de login do Cuidar ERP]**
+
+**Campos:**
+- **Usuário:** Digite seu nome de usuário
+- **Senha:** Digite sua senha de acesso
+- **Botão Entrar:** Acessa o sistema
+- **Botão Esqueci a Senha:** Recuperação de senha (função do administrador)
+
+### 3.2 Primeiro Acesso
+
+No primeiro acesso, utilize as credenciais padrão fornecidas pelo administrador do sistema. Recomenda-se alterar a senha após o primeiro login.
+
+**[IMAGEM: Tela após primeiro login]**
+
+---
+
+## 4. Menu Principal
+
+Após o login, a tela principal do sistema é exibida.
+
+**[IMAGEM: Tela principal do Cuidar ERP]**
+
+### 4.1 Barra de Ferramentas
+
+A barra de ferramentas oferece acesso rápido às principais funções:
+
+**[IMAGEM: Barra de ferramentas detalhada]**
+
+| Ícone | Função | Atalho |
+|-------|--------|--------|
+| Home | Tela inicial | Ctrl+H |
+| Agenda | Agenda de atendimentos | Ctrl+A |
+| Pacientes | Cadastro de pacientes | Ctrl+P |
+| Financeiro | Controle financeiro | Ctrl+F |
+| Relatórios | Emissão de relatórios | Ctrl+R |
+| Config | Configurações | Ctrl+, |
+
+### 4.2 Barra de Status
+
+A barra de status na parte inferior exibe:
+
+**[IMAGEM: Barra de status]**
+
+- Usuário logado
+- Data e hora atual
+- Status da conexão com o banco de dados
+- Versão do sistema
+
+### 4.3 Área de Trabalho
+
+A área central é onde os módulos e funcionalidades são exibidos.
+
+**[IMAGEM: Área de trabalho com módulo aberto]**
+
+---
+
+## 5. Cadastros
+
+O módulo de cadastros é acessado pelo menu lateral ou pela tecla de atalho.
+
+**[IMAGEM: Menu de cadastros]**
+
+### 5.1 Cadastro de Pacientes
+
+**[IMAGEM: Tela de cadastro de pacientes]**
+
+**Campos do cadastro:**
+
+| Campo | Descrição | Obrigatório |
+|-------|-----------|-------------|
+| Nome Completo | Nome do paciente | Sim |
+| CPF | Número do CPF | Não |
+| RG | Número do RG | Não |
+| Data de Nascimento | Data de nascimento | Sim |
+| Sexo | Masculino/Feminino/Outro | Sim |
+| Telefone | Telefone para contato | Não |
+| Celular | Celular para contato | Não |
+| E-mail | Endereço de e-mail | Não |
+| Endereço | Logradouro, número, bairro, cidade | Não |
+| Observações | Anotações sobre o paciente | Não |
+
+**Botões de ação:**
+- **Novo:** Limpa o formulário para um novo cadastro
+- **Salvar:** Armazena os dados no banco
+- **Editar:** Permite alterar dados de um registro existente
+- **Excluir:** Remove o registro (com confirmação)
+- **Pesquisar:** Busca pacientes cadastrados
+- **Imprimir:** Imprime ficha do paciente
+
+### 5.2 Cadastro de Profissionais
+
+**[IMAGEM: Tela de cadastro de profissionais]**
+
+**Campos do cadastro:**
+
+| Campo | Descrição | Obrigatório |
+|-------|-----------|-------------|
+| Nome | Nome completo do profissional | Sim |
+| CPF | Número do CPF | Sim |
+| CRO/CRM | Número de registro profissional | Sim |
+| Especialidade | Área de atuação | Não |
+| Telefone | Contato do profissional | Não |
+| E-mail | E-mail profissional | Não |
+
+### 5.3 Cadastro de Serviços/Procedimentos
+
+**[IMAGEM: Tela de cadastro de serviços]**
+
+**Campos do cadastro:**
+
+| Campo | Descrição | Obrigatório |
+|-------|-----------|-------------|
+| Código | Código identificador | Sim |
+| Descrição | Nome do procedimento/serviço | Sim |
+| Valor | Preço do serviço | Sim |
+| Duração | Tempo estimado em minutos | Não |
+| Profissional Responsável | Profissional que executa | Não |
+
+### 5.4 Cadastro de Produtos/Estoque
+
+**[IMAGEM: Tela de cadastro de produtos]**
+
+**Campos do cadastro:**
+
+| Campo | Descrição | Obrigatório |
+|-------|-----------|-------------|
+| Código | Código do produto | Sim |
+| Nome | Nome comercial do produto | Sim |
+| Descrição | Descrição detalhada | Não |
+| Categoria | Categoria do produto | Não |
+| Unidade | Unidade de medida (un, kg, ml, etc.) | Sim |
+| Estoque Mínimo | Quantidade mínima em estoque | Não |
+| Estoque Atual | Quantidade disponível | Não |
+| Valor de Custo | Preço de custo | Não |
+| Valor de Venda | Preço de venda | Sim |
+
+---
+
+## 6. Movimentações
+
+### 6.1 Agenda de Agendamentos
+
+**[IMAGEM: Tela da agenda]**
+
+A agenda permite visualizar e gerenciar todos os agendamentos.
+
+**Funcionalidades:**
+- Visualização diária, semanal e mensal
+- Filtro por profissional
+- Filtro por paciente
+- Status do agendamento (Confirmado, Aguardando, Cancelado, Concluído)
+- Cores indicativas por status
+
+**Como agendar:**
+1. Clique no horário desejado
+2. Selecione o paciente
+3. Escolha o profissional
+4. Selecione o procedimento/serviço
+5. Clique em **Salvar**
+
+**[IMAGEM: Detalhe do agendamento]**
+
+### 6.2 Registro de Atendimento
+
+**[IMAGEM: Tela de registro de atendimento]**
+
+**Campos:**
+
+| Campo | Descrição |
+|-------|-----------|
+| Paciente | Paciente atendido |
+| Profissional | Profissional que atendeu |
+| Data e Hora | Data e hora do atendimento |
+| Procedimento | Serviço realizado |
+| Observações | Anotações do atendimento |
+| Prontuário | Registro do prontuário |
+
+### 6.3 Movimentação de Estoque
+
+**[IMAGEM: Tela de movimentação de estoque]**
+
+**Tipos de movimentação:**
+- **Entrada:** Adição de produtos ao estoque
+- **Saída:** Retirada de produtos do estoque
+- **Perda:** Produtos perdidos/vencidos
+- **Ajuste:** Correção de quantidade
+
+---
+
+## 7. Financeiro
+
+### 7.1 Contas a Pagar
+
+**[IMAGEM: Tela de contas a pagar]**
+
+**Campos:**
+
+| Campo | Descrição |
+|-------|-----------|
+| Fornecedor | Nome do fornecedor |
+| Descrição | Descrição da despesa |
+| Valor | Valor a pagar |
+| Vencimento | Data de vencimento |
+| Status | Aberto, Pago, Vencido, Cancelado |
+| Forma de Pagamento | Dinheiro, PIX, Boleto, Cartão, etc. |
+
+**Funcionalidades:**
+- Cadastro de novas contas
+- Marcar como paga
+- Edição de contas em aberto
+- Filtro por período
+- Filtro por status
+- Impressão de boleto
+
+### 7.2 Contas a Receber
+
+**[IMAGEM: Tela de contas a receber]**
+
+**Campos:**
+
+| Campo | Descrição |
+|-------|-----------|
+| Paciente | Nome do paciente/cliente |
+| Descrição | Descrição do serviço |
+| Valor | Valor a receber |
+| Vencimento | Data de vencimento |
+| Status | Aberto, Recebido, Vencido, Cancelado |
+| Forma de Pagamento | Dinheiro, PIX, Boleto, Cartão, etc. |
+
+### 7.3 Fluxo de Caixa
+
+**[IMAGEM: Tela de fluxo de caixa]**
+
+Demonstra visualmente as entradas e saídas de dinheiro no período selecionado.
+
+**Funcionalidades:**
+- Gráfico de evolução do caixa
+- Saldo do dia
+- Total de entradas
+- Total de saídas
+- Saldo projetado
+
+### 7.4 Faturamento
+
+**[IMAGEM: Tela de faturamento]**
+
+Exibe o resumo de faturamento por período, profissional ou serviço.
+
+---
+
+## 8. Relatórios
+
+### 8.1 Relatório de Pacientes
+
+**[IMAGEM: Tela de relatórios de pacientes]**
+
+**Opções de filtro:**
+- Todos os pacientes
+- Pacientes ativos
+- Pacientes por cidade
+- Pacientes por faixa etária
+- Pacientes sem atendimento recente
+
+### 8.2 Relatório Financeiro
+
+**[IMAGEM: Tela de relatórios financeiros]**
+
+**Opções de filtro:**
+- Período (data inicial e final)
+- Tipo (a pagar, a receber, todos)
+- Status (pago, aberto, vencido)
+- Profissional
+- Serviço
+
+### 8.3 Relatório de Agenda
+
+**[IMAGEM: Tela de relatórios de agenda]**
+
+**Opções de filtro:**
+- Período
+- Profissional
+- Status do agendamento
+- Tipo de atendimento
+
+### 8.4 Relatório de Estoque
+
+**[IMAGEM: Tela de relatórios de estoque]**
+
+**Opções:**
+- Produtos com estoque baixo
+- Movimento de estoque por período
+- Valor total do estoque
+- Produtos mais utilizados
+
+### 8.5 Exportação de Relatórios
+
+Todos os relatórios podem ser:
+- **Impressos** diretamente
+- **Exportados em PDF**
+- **Exportados em Excel**
+- **Enviados por e-mail**
+
+---
+
+## 9. Configurações
+
+### 9.1 Dados da Empresa
+
+**[IMAGEM: Tela de configurações da empresa]**
+
+**Campos:**
+
+| Campo | Descrição |
+|-------|-----------|
+| Nome da Empresa | Razão social |
+| Nome Fantasia | Nome de exibição |
+| CNPJ | Número do CNPJ |
+| Endereço | Endereço completo |
+| Telefone | Telefone de contato |
+| E-mail | E-mail de contato |
+| Site | Website da empresa |
+| Logo | Imagem do logo da empresa |
+
+### 9.2 Configurações de Sistema
+
+**[IMAGEM: Tela de configurações do sistema]**
+
+**Opções disponíveis:**
+- Alterar senha do usuário
+- Definir horário de funcionamento
+- Configurar tempo mínimo de agendamento
+- Ativar/desativar notificações
+- Definir padrões de recibo
+- Configurar backup automático
+- Definir quantidade de cópias de backup a manter
+
+### 9.3 Usuários e Permissões
+
+**[IMAGEM: Tela de gerenciamento de usuários]**
+
+Permite ao administrador:
+- Cadastrar novos usuários
+- Definir níveis de acesso (Administrador, Gerente, Operador)
+- Ativar/desativar usuários
+- Definir permissões individuais
+
+### 9.4 Backup e Restauração
+
+**[IMAGEM: Tela de backup]**
+
+**Funcionalidades:**
+- Realizar backup manual
+- Restaurar dados de um backup
+- Definir agendamento de backup automático
+- Local de armazenamento do backup
+
+---
+
+## 10. Desinstalação do Sistema
+
+### 10.1 Desinstalando pelo Painel de Controle
+
+1. Acesse o **Painel de Controle** do Windows
+2. Vá em **Programas e Recursos**
+3. Localize **Cuidar ERP — Vila do Aprender**
+4. Clique em **Desinstalar**
+
+### 10.2 Menu de Desinstalação
+
+Ao iniciar a desinstalação, será exibido um menu com as seguintes opções:
+
+**[IMAGEM: Tela de desinstalação]**
+
+```
+[x] 1 - Desinstalar o programa (sempre ativo)
+[ ] 2 - Apagar dados de backup (Documents\Cuidar-ERP)
+[ ] 3 - Apagar dados do sistema (banco e perfil)
+
+Tecle 2 ou 3 para marcar/desmarcar
+Tecle Enter para confirmar a desinstalacao
+Tecle X + Enter para cancelar
+```
+
+**Opções disponíveis:**
+
+| Opção | Descrição | Padrão |
+|-------|-----------|--------|
+| 1 - Desinstalar o programa | Remove o programa e todos os arquivos de instalação | Sempre marcada e desabilitada |
+| 2 - Apagar dados de backup | Remove a pasta Documents\Cuidar-ERP com backups e relatórios | Desmarcada |
+| 3 - Apagar dados do sistema | Remove o banco de dados e perfil do sistema em ProgramData | Desmarcada |
+
+**Instruções de uso:**
+- Tecle **2** para marcar/desmarcar a remoção dos dados de backup
+- Tecle **3** para marcar/desmarcar a remoção dos dados do sistema
+- Tecle **Enter** para confirmar e iniciar a desinstalação
+- Tecle **X** e depois **Enter** para cancelar
+
+### 10.3 Observações Importantes
+
+- A desinstalação sempre remove o programa e os arquivos de instalação
+- Os dados de backup e do sistema são removidos **somente** se as opções correspondentes forem marcadas
+- Após a desinstalação, um log será gerado em `C:\CuidarErp-Uninstall.log`
+- Para uma reinstalação limpa, marque todas as opções de remoção de dados
+
+---
+
+## Suporte
+
+Em caso de dúvidas ou problemas, entre em contato com o suporte:
+
+- **E-mail:** suporte@cuidarerp.com.br
+- **Telefone:** (00) 0000-0000
+- **Horário:** Segunda a Sexta, 8h às 18h
+
+---
+
+*Manual sujeito a alterações sem aviso prévio.*
+*Versão do documento: 1.0 — Atualizado em Setembro de 2026*

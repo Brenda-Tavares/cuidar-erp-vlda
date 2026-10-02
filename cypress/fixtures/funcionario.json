@@ -1,0 +1,10 @@
+{
+  "nome": "Ana Oliveira",
+  "cpf": "987.654.321-00",
+  "email": "ana.oliveira@email.com",
+  "telefone": "(11) 98888-7777",
+  "cargo_id": 1,
+  "salario": 3500,
+  "data_admissao": "2024-01-15",
+  "status": "ativo"
+}

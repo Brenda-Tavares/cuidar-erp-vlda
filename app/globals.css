@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slide-down {
+    from {
+      grid-template-rows: 0fr;
+      opacity: 0;
+    }
+    to {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+  }
+
+  @keyframes progress-indeterminate {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(55%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.4s ease-out both;
+  }
+
+  .animate-progress {
+    width: 45%;
+    animation: progress-indeterminate 1.2s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out both;
+  }
+
+  .animate-slide-down {
+    animation: slide-down 0.25s ease-out both;
+  }
+
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card-table {
+    @apply bg-white rounded-xl border border-gray-200;
+  }
+  .card-table-header {
+    @apply bg-gray-50;
+  }
+  .card-table-row {
+    @apply hover:bg-gray-50;
+  }
+  .page-title {
+    @apply text-2xl font-bold tracking-tight text-gray-900;
+  }
+  .page-subtitle {
+    @apply text-sm text-muted-foreground;
+  }
+}
+
+@layer base {
+  :root {
+    --scrollbar-track: #f1f5f9;
+    --scrollbar-thumb: #cbd5e1;
+    --scrollbar-thumb-hover: #94a3b8;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 4px;
+    border: 2px solid var(--scrollbar-track);
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+  }
+}
+
+/* ===== Calendário (react-calendar) ===== */
+.erp-calendar .react-calendar {
+  border: none;
+  font-family: inherit;
+  width: 300px;
+  max-width: 100%;
+  background: transparent;
+}
+.erp-calendar .react-calendar__navigation {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+.erp-calendar .react-calendar__navigation button {
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--foreground);
+  background: transparent;
+  min-width: 32px;
+  padding: 6px 8px;
+}
+.erp-calendar .react-calendar__navigation button:enabled:hover {
+  background: var(--accent);
+}
+.erp-calendar .react-calendar__navigation button:disabled {
+  opacity: 0.35;
+}
+.erp-calendar .react-calendar__navigation__label {
+  pointer-events: none;
+}
+.erp-calendar .react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--muted-foreground);
+}
+.erp-calendar .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+.erp-calendar .react-calendar__tile {
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--foreground);
+  background: transparent;
+  padding: 8px 4px;
+}
+.erp-calendar .react-calendar__tile:enabled:hover,
+.erp-calendar .react-calendar__tile:enabled:focus {
+  background: var(--accent);
+}
+.erp-calendar .react-calendar__tile--now {
+  background: hsl(var(--primary) / 0.12);
+  font-weight: 700;
+}
+.erp-calendar .react-calendar__tile--active {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-weight: 700;
+}
+.erp-calendar .react-calendar__tile--active:enabled:hover,
+.erp-calendar .react-calendar__tile--active:enabled:focus {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+.erp-calendar .react-calendar__month-view__days__day--weekend {
+  color: var(--foreground);
+}
+.erp-calendar .react-calendar__month-view__days__day--neighboringMonth {
+  color: var(--muted-foreground);
+  opacity: 0.6;
+}
+.erp-calendar .react-calendar__year-view__months__month,
+.erp-calendar .react-calendar__decade-view__years__year {
+  padding: 10px 4px;
+  font-weight: 500;
+}

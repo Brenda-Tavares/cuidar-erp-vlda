@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Cuidar ERP - Vila do Aprender",
+  "version": "1.0.8",
+  "identifier": "com.cuidarerp.vda",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:3000",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../out"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Cuidar ERP - Vila do Aprender",
+        "width": 1200,
+        "height": 800,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi"],
+    "licenseFile": "./windows/license.rtf",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "allowDowngrades": true,
+      "wix": {
+        "language": {
+          "pt-BR": {
+            "localePath": "./windows/locale.pt-BR.wxl"
+          }
+        },
+        "template": "./windows/wix/main.wxs"
+      }
+    }
+  }
+}

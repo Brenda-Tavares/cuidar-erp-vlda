@@ -1,0 +1,1 @@
+echo 4af53cdb599988c4949082f7:2099-12-31:Teste 1.0.7:jwttCMwgt2usD2bq5YOaqSycudOQLH_Vtr68OXyUhbfHU85ArYqtjoY_LEVNL0pbf4QtluxwM6LNTPzvHWm4Ag== | "C:\projetos\cuidar-erp-vila-do-aprender\dist\instalador.exe"

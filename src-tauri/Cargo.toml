@@ -1,0 +1,37 @@
+[package]
+name = "cuidar-erp"
+version = "1.0.8"
+description = "Cuidar ERP"
+authors = ["Brenda Tavares"]
+edition = "2021"
+rust-version = "1.77"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+ed25519-dalek = { version = "2", features = ["std", "rand_core"] }
+rand = "0.8"
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+chrono = { version = "0.4", features = ["serde"] }
+bcrypt = "0.15"
+tokio = { version = "1", features = ["full"] }
+open = "5"
+regex = "1.10"
+lazy_static = "1.4"
+log = "0.4"
+env_logger = "0.11"
+dirs = "5"
+jsonwebtoken = "9.3"
+uuid = { version = "1.10", features = ["v4"] }
+sha2 = "0.10"
+hex = "0.4"
+whoami = "1"
+ed25519-dalek = { version = "2", features = ["std"] }
+base64 = "0.22"
+tauri-plugin-dialog = "2"
+tiny_http = "0.12"
+local-ip-address = "0.6"
