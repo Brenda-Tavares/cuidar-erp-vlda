@@ -453,8 +453,10 @@ repository is published for portfolio and review purposes.
 
 ## Author
 
-**Brenda Tavares** - Backend Developer, Humanities (Federal University of Bahia, UFBA)
+**Brenda Tavares** - Backend Developer
 
+- B.A. in Humanities, Federal University of Bahia (UFBA)
+- Backend Development, Pitágoras Unopar Anhanguera University
 - GitHub: <https://github.com/Brenda-Tavares>
 - LinkedIn: <https://www.linkedin.com/in/brenda-campos-tavares/>
 
