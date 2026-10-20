@@ -453,7 +453,7 @@ repository is published for portfolio and review purposes.
 
 ## Author
 
-**Brenda Tavares** - Backend Developer
+**Brenda Tavares** - Full-Stack Developer
 
 - B.A. in Humanities, Federal University of Bahia (UFBA)
 - Backend Development, Pitágoras Unopar Anhanguera University
